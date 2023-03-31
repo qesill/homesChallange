@@ -45,12 +45,13 @@ while (i<10) {
 
         int j = 0;
         while (j< homes.length){
+            System.out.println("Home j: " + j);
             if (homes[j] instanceof Residence){
-                System.out.println(((Residence) homes[j]).getGarageSize());
+                System.out.println("Residence garageSize: "+((Residence) homes[j]).getGarageSize());
                 System.out.println(((Residence) homes[j]).toString());
             }
             else if (homes[j] instanceof House){
-                System.out.println(((House) homes[j]).getParcelSize());
+                System.out.println("House parcelSize: "+((House) homes[j]).getParcelSize());
                 System.out.println(((House) homes[j]).toString());
             }
             else if (homes[j] instanceof Flat){

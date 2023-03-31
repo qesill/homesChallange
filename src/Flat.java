@@ -1,6 +1,6 @@
 public class Flat {
-    String city;
-    String street;
+    protected String city;
+    protected String street;
 
     public Flat() {
     }

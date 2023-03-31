@@ -1,5 +1,5 @@
 public class House extends Flat{
-    float parcelSize;
+    protected float parcelSize;
 
     public House() {
     }

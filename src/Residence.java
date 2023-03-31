@@ -1,5 +1,5 @@
 public class Residence extends House{
-    float garageSize;
+    protected float garageSize;
 
     public Residence() {
     }
