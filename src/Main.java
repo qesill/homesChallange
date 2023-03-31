@@ -24,13 +24,42 @@ Na koniec pokaż toString z Flat. Sprawdzając kolejne warianty użyj if else if
 Flat [] homes = new Flat[10];
 int i = 0;
 while (i<10) {
-    int random = Math.floor(Math.random()*20);
+    int random = (int)Math.floor(Math.random()*3);
     switch (random) {
         case 0:
-            homes[i]= new
+            homes[i]= new Flat("Warszawa", "Senatorska");
             break;
+        case 1:
+            homes[i]= new House("Pruszków", "Przyjazna", 100.5f);
+            break;
+        case 2:
+            homes[i]= new Residence("Palma", "St. Cruz", 200.0f,40.0f);
+            break;
+        default:
+            System.out.println(random);
+            break;
+
     }
     i++;
 }
+
+        int j = 0;
+        while (j< homes.length){
+            if (homes[j] instanceof Residence){
+                System.out.println(((Residence) homes[j]).getGarageSize());
+                System.out.println(((Residence) homes[j]).toString());
+            }
+            else if (homes[j] instanceof House){
+                System.out.println(((House) homes[j]).getParcelSize());
+                System.out.println(((House) homes[j]).toString());
+            }
+            else if (homes[j] instanceof Flat){
+                System.out.println(((Flat) homes[j]).toString());
+            }
+            else {
+                System.out.println("Bład");
+            }
+            j++;
+        }
     }
 }

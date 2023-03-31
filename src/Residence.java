@@ -1,6 +1,9 @@
 public class Residence extends House{
     float garageSize;
 
+    public Residence() {
+    }
+
     public Residence(String city, String street, float parcelSize, float garageSize) {
         super(city, street, parcelSize);
         this.garageSize = garageSize;

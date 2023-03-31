@@ -1,6 +1,9 @@
 public class House extends Flat{
     float parcelSize;
 
+    public House() {
+    }
+
     public House(String city, String street, float parcelSize) {
         super(city, street);
         this.parcelSize = parcelSize;
