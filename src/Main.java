@@ -21,6 +21,16 @@ tą klasę i pokaż w konsoli wartość garageSize z gettera i rezultat toString
 House po konwersji pokaż wartość parcelSize z gettera i toString.
 Na koniec pokaż toString z Flat. Sprawdzając kolejne warianty użyj if else if...
  */
-
+Flat [] homes = new Flat[10];
+int i = 0;
+while (i<10) {
+    int random = Math.floor(Math.random()*20);
+    switch (random) {
+        case 0:
+            homes[i]= new
+            break;
+    }
+    i++;
+}
     }
 }
